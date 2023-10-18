@@ -1,1 +1,17 @@
-<p>receipe-item works!</p>
+<a href="#" class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ receipe.name }}</h4>
+    <p class="list-group-item-text">{{ receipe.description }}</p>
+  </div>
+  <span class="pull-right">
+    <!-- STRING INTERPOLATION FOR SRC -->
+    <!-- <img
+          src="{{ receipe.imagePath }}"          
+          alt="{{ receipe.name }}"
+          class="img-responsive"
+          style="max-height: 50px"
+        /> -->
+    <!-- PROPERTY BINDING FOR SRC-property -->
+    <img [src]="receipe.imagePath" alt="{{ receipe.name }}" class="img-responsive" style="max-height: 50px" />
+  </span>
+</a>
