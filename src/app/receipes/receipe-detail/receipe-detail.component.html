@@ -1,11 +1,17 @@
 <div class="row">
   <div class="col-xs-12">
-    <img src="" alt="" class="img-responsive" />
+    <!-- Adding property binding -->
+    <img
+      [src]="receipe.imagePath"
+      alt="{{ receipe.name }}"
+      class="img-responsive"
+      style="max-height: 300px"
+    />
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <h1>Receipe Name</h1>
+    <h1>{{ receipe.name }}</h1>
   </div>
 </div>
 <div class="row">
@@ -23,12 +29,10 @@
   </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-        Description
-    </div>
+  <div class="col-xs-12">
+    {{ receipe.description }}
+  </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-        Ingredients
-    </div>
+  <div class="col-xs-12">Ingredients</div>
 </div>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Receipe } from 'src/app/receipes/receipe.model';
 
 @Component({
   selector: 'app-receipe-detail',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./receipe-detail.component.css']
 })
 export class ReceipesDetailComponent {
-
+  @Input() receipe: Receipe
 }
