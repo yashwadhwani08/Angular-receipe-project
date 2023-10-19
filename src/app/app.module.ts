@@ -9,11 +9,21 @@ import { ReceipesDetailComponent } from './receipes/receipe-detail/receipe-detai
 import { ReceipeItemComponent } from './receipes/receipe-list/receipe-item/receipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ReceipesComponent, ReceipesListComponent, ReceipesDetailComponent, ReceipeItemComponent, ShoppingListComponent, ShoppingEditComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    ReceipesComponent,
+    ReceipesListComponent,
+    ReceipesDetailComponent,
+    ReceipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
